@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>后台</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="yhtml5.com"/>
+  <meta name="keywords" content="">
+  <meta name="description" content=" ">
+  <meta name="HandheldFriendly" content="true">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/index.css">
+  <script>
+    function hasToken() {
+      var result = /ztoken/g.test(document.cookie) && !(document.cookie.split('ztoken=')[1].split(';')[0] === '');
+      return result
+    }
+    function clearCookieAll() {
+      var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+      if (keys) {
+        for (var i = keys.length; i--;)
+          document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
+      }
+    }
+    if (!hasToken()) {
+      console.warn('无效token')
+      clearCookieAll()
+      window.location.href = '/index.html'
+    }
+  </script>
+
+</head>
+
+<body>
+<div id="container"></div>
+<script type="text/javascript" src="/vendors.js"></script>
+<script type="text/javascript" src="/index.js"></script>
+</body>
+</html>

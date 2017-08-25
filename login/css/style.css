@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,header,dl,dt,dd,ol,ul,li,article,textarea,menu,section,footer,div,p,h1,h2,h3,h4,h5{margin:0; padding:0;}
+html{font-size:12px;}
+body{ font-family:"黑体",Arial; color:#464e66;}
+a{text-decoration: none; outline:none; color:#464e66;}
+ul,li,ol,dl,dt,dd{list-style:none;}
+.cb{clear:both; overflow:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+.hide{display: none;}
+
+
+html,body{
+	width:100%;
+	height:100%;
+}
+.login-btn[disabled]{
+	pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+.box-bg{
+	width:100%;
+	height:100%;
+	background: url(../img/loginBg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+#logo{
+	width:140px;
+	height: auto;
+	/*background:url(../img/logo.png) no-repeat center bottom;*/
+	background-size:100%;
+	margin:0 auto 0 auto;
+	padding-top:180px;
+}
+.title{
+	color:#fff;
+	text-align: center;
+	margin: 16px 0;
+	font-size:24px;
+}
+.login-frame{
+	width:250px;
+	padding:30px 50px;
+	background:#fff;
+	border-radius: 4px;
+	margin:0 auto;
+}
+.top-name{
+	padding-bottom: 10px;
+	color:#464e66;
+	font-size: 16px;
+	text-align: center;
+}
+.input-box{
+	width:100%;
+	margin:10px 0;
+	position:relative;
+}
+.input-data{
+	width:100%;
+	border:1px solid #ced2db;
+	border-radius: 4px;
+	height:28px;
+	text-indent: 8px;
+	margin: 4px 0;
+	outline: none;
+}
+.input-icon{
+	position:absolute;
+	top:12px;
+	left:9px;
+	color:#ced2db;
+}
+#remeber .iconfont{
+	font-size: 12px;
+	color: #ced2db;
+}
+.error{
+	color:#ff5500;
+	display: none;
+}
+#remeber .check{
+	color:#6070bf;
+}
+.login-btn{
+	width:100%;
+	height:34px;
+	border:none;
+	border-radius: 4px;
+	color:#fff;
+	background:#6070bf;
+	margin-top:20px;
+	outline: none;
+	cursor: pointer;
+}
+#mask{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	left:0;
+	display: none;
+}
+
+.step1{
+	width:80%;
+	height: 52px;
+	background: url(../img/step1.png) no-repeat center center;
+	background-size:100%;
+	margin: 0 auto;
+}
+.step2{
+	width:80%;
+	height: 52px;
+	background: url(../img/step2.png) no-repeat center center;
+	background-size:100%;
+	margin: 0 auto;
+}
+
+.input-short{
+	width:54%;
+	border:1px solid #ced2db;
+	border-radius: 4px;
+	height:28px;
+	text-indent: 8px;
+	outline: none;
+	margin-right: 2%;
+}
+.short-btn{
+	width:38%;
+	height:30px;
+	border:none;
+	background:#FF5500;
+	color:#fff;
+	border-radius: 4px;
+	outline: none;
+}
+#random-frame{
+	position:absolute;
+	top:34%;
+	left:50%;
+	margin-left:-175px;
+}
+#off{
+	width:15px;
+	height: 15px;
+	position:absolute;
+	top:4px;
+	right:6px;
+	background:url(../img/dele.png) no-repeat center center;
+	background-size:100%;
+}
+#random-img{
+	width:22%;
+	height:32px;
+}
+#change-img{
+	display: inline-block;
+	width:20%;
+	color:#6070bf;
+}
+.succ-word{
+	text-align: center;
+	font-size:16px;
+}
+#timer{
+	color:#f8ad57;
+}
+.text-in30{
+	text-indent: 30px;
+}
+.msbg{
+	position: fixed;
+	width: 50%;
+	height: 60px;
+	background: rgba(0,0,0,0.5);
+	top: 10px;
+	left: 25%
+}
+.promptmsg{
+  	line-height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}

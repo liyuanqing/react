@@ -1,0 +1,11 @@
+.DS_Store
+tmp
+node_modules
+lib
+coverage
+.nyc_output
+npm-debug.log
+test/typescript/*.map
+test/typescript/*.jsx
+.idea/
+community-dashboard/
