@@ -27,21 +27,11 @@ class Layout extends React.Component {
     }
     render() {
         switch (this.props.location.pathname) {
-            case '/serveManager':
+            case '/demo':
                 selected = '1';
                 break;
-            case '/communityManagerAdd':
-            case '/communityManagerEdit':
-            case '/communityManager':
-                selected = '2';
-                break;
-            case '/estateCompanyUpdate':
-            case '/estateCompanyAdd':
-            case '/estateCompanyManager':
-                selected = '3';
-                break;
             default:
-                selected = '2';
+                selected = '1';
                 break;
         }
         return (
@@ -54,12 +44,9 @@ class Layout extends React.Component {
                                 theme="light"
                                 defaultOpenKeys={['memberManager']}
                                 selectedKeys={[selected]}>
-                                <Menu.SubMenu key="memberManager" title={<span><Icon type="solution" /><span>企业管理</span></span>}>
+                                <Menu.SubMenu key="memberManager" title={<span><Icon type="solution" /><span>demo管理</span></span>}>
                                     <Menu.Item key="2">
-                                        <Link to="/communityManager">小区管理</Link>
-                                    </Menu.Item>
-                                    <Menu.Item key="3">
-                                        <Link to="/estateCompanyManager">企业管理</Link>
+                                        <Link to="/communityManager">demo管理</Link>
                                     </Menu.Item>
                                 </Menu.SubMenu>
                             </Menu>

@@ -20,25 +20,10 @@ module.exports = function (templateParams) {
     <meta name="format-detection" content="telephone=no">
     </head>
     <script>
-      function hasToken() {
-        var result = /ztoken/g.test(document.cookie) && !(document.cookie.split('ztoken=')[1].split(';')[0] === '');
-        return result
-      }
-      function clearCookieAll() {
-        var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
-        if (keys) {
-          for (var i = keys.length; i--;)
-            document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
-        }
-      }
-      if (!hasToken()) {
-        console.warn('无效token')
-        clearCookieAll()
-        window.location.href = '/index.html'
-      }
+
     </script>
     <body>
-    <div id="root" style="height:100%"></div>
+    <div id="container" style="height:100%"></div>
     <!--<div>development mode</div>-->
     </body>
     </html>`

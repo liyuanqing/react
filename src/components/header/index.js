@@ -135,7 +135,7 @@ class Header extends React.Component {
     return (
       <div className="header-component">
         <div className="sitenav">
-          <h3>智慧社区运营管理后台</h3>
+          <h3>demo管理后台</h3>
           <Dropdown overlay={menu}>
             <div className="fr userInfo pointer">
               欢迎你，{name ? name : '默认用户'}
