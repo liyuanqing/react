@@ -14,7 +14,8 @@ module.exports = {
     filename: '[name].js',
     chunkFilename: '[name].js' //注意这里，用[name]可以自动生成路由名称对应的js文件
   },
-  devtool: false,
+//   devtool: false,
+  devtool: 'inline-source-map', //报错信息指向源文件
   devServer: {
     inline: true,
     port: 1234
