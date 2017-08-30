@@ -18,6 +18,7 @@ $ npm run build
 * webpack生成首页
 * 热更新
 * 路由分割
+* 报错信息指向源文件
 
 ### 开发步骤
 1. 在src/containers 文件下添加页面
